@@ -96,7 +96,7 @@ export default {
 .card-link {
 	text-transform: uppercase;
 	font-weight: bold;
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 
 	&:hover {
