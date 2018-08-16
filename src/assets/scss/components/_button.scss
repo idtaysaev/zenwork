@@ -1,0 +1,27 @@
+.btn,
+button {
+  position: relative;
+	display: inline-block;
+	vertical-align: top;
+  text-align: center;
+  background-color: transparent;
+  box-shadow: none;
+	cursor: pointer;
+	color: white;
+	padding: 0.7em 2.2em;
+	font-weight: bold;
+	background-color: $color-accent;
+	border-radius: $border-radius;
+	box-shadow: 0 18px 35px $color-shadow;
+	background-image: linear-gradient(to left, rgba($color-accent, 0.4), rgba($color-primary, 0.4));
+	transition: all 0.3s;
+
+  &:hover {
+		box-shadow: 0 6px 10px $color-shadow;
+		opacity: 0.9;
+	}
+	&:focus {
+		box-shadow: 0 0 1em $color-shadow;
+		opacity: 0.7;
+	}
+}

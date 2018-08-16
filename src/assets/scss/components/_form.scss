@@ -1,0 +1,46 @@
+.form-block {
+	input {
+		width: 100%;
+		margin-bottom: 1em;
+	}
+	button {
+		width: 100%;
+	}
+	@include respond-to(small) {
+		display: flex;
+
+		input {
+			margin-bottom: 0;
+			flex-grow: 1;
+			width: 50%;
+			margin-right: 5%;
+		}
+
+		button {
+			width: auto;
+			flex-shrink: 0;
+		}
+	}
+}
+
+input,
+textarea,
+select {
+	max-width: 100%;
+	background-color: white;
+	color: $color-text;
+	box-shadow: 0 18px 35px $color-shadow;
+	padding: 0.7em;
+	transition: all 0.3s;
+	border-radius: $border-radius;
+  &:disabled,
+  &:read-only {
+    pointer-events: none;
+  }
+	&:focus {
+		box-shadow: 0 0 1em $color-shadow;
+	}
+	@include respond-to(x-small) {
+		padding: 0.7em 2.2em;
+	}
+}

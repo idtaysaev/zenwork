@@ -1,0 +1,13 @@
+// Colors
+$color-1: rgb(250, 120, 117);
+$color-2: rgb(60, 55, 104);
+
+$color-primary: $color-2;
+$color-accent: $color-1;
+
+$color-background: white;
+$color-text: $color-primary;
+$color-text-link: $color-accent;
+$color-text-link-hover: inherit;
+$color-semi-transparent: rgba(black, 0.5);
+$color-shadow: rgba($color-accent, 0.1);
