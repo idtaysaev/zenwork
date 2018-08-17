@@ -10,11 +10,11 @@
 						We provide resource for companies that see remote work as an opportunity, from hiring to training to managing distributed teams. We are focused on providing expert insight, best practices, and valuable support for organizations exploring or already embracing a remote team as a significant portion of their workforce.
 					</p>
 				</div>
-				<footer-links v-animate="500"/>
-				<social-links v-animate="1200"/>
+				<footer-links v-animate="300"/>
+				<social-links v-animate="400"/>
 			</div>
 			<p
-				v-animate="1700"
+				v-animate="500"
 				class="copyright">
 				&copy; 2018 Zenwork. All rights reserved.
 			</p>

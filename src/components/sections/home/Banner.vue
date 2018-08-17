@@ -9,12 +9,12 @@
 			<p v-animate="500">
 				An ever-increasing number of contractors and full-time employees are working from home or daydreaming about working from home.
 			</p>
-			<p 
-				v-animate="1000" 
+			<p
+				v-animate="1000"
 				class="tip">
 				Sign up now to receive our daily tips
 			</p>
-			<subscribe-form v-animate="1500"/>
+			<subscribe-form v-animate="1200"/>
 		</div>
 	</app-section>
 </template>

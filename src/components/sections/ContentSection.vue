@@ -8,11 +8,11 @@
 				class="card-title"
 				v-html="title"/>
 			<div
-				v-animate="500"
+				v-animate="200"
 				class="card-content">
 				<slot/>
 			</div>
-			<p v-animate="800">
+			<p v-animate="100">
 				<a
 					:href="link"
 					:title="title"
