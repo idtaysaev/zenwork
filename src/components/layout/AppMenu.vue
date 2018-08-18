@@ -8,20 +8,23 @@
 			<span/>
 			<span/>
 		</div>
-		<transition-group
-			:class="{active: menuActive}"
-			tag="ul"
-			mode="in-out"
+		<nav 
+			:class="{active: menuActive}" 
 			class="menu-links">
-			<li
-				v-for="link in linksShown"
-				:key="link.title"
-				class="menu-links-item">
-				<a
-					:href="link.link"
-					class="menu-link">{{ link.title }}</a>
-			</li>
-		</transition-group>
+			<transition-group
+				tag="ul"
+				mode="in-out"
+				class="menu-links-list">
+				<li
+					v-for="link in linksShown"
+					:key="link.title"
+					class="menu-links-item">
+					<a
+						:href="link.link"
+						class="menu-link">{{ link.title }}</a>
+				</li>
+			</transition-group>
+		</nav>
 	</div>
 </template>
 
@@ -122,12 +125,11 @@ export default {
 	bottom: -1em;
 	right: 0;
 	transform: translate3d(0, 100%, 0);
-
-	.menu-links-item:not(:last-child) {
-		margin-bottom: 1em;
-	}
 }
 .menu-links-item {
+	&:not(:last-child) {
+		margin-bottom: 1em;
+	}
 	&.v-enter-active {
 		animation: 1s fadeIn both;
 	}
