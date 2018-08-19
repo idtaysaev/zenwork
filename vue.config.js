@@ -1,5 +1,5 @@
 module.exports = {
-	css: {
+    css: {
 		loaderOptions: {
 			sass: {
 				data: `
@@ -8,5 +8,10 @@ module.exports = {
         `
 			}
 		}
-	}
+	},
+
+    pwa: {
+      themeColor: '#fa7875',
+      msTileColor: '#ffffff'
+    }
 }
