@@ -4,17 +4,16 @@ module.exports = {
     browser: true,
     node: true
   },
-  'extends': [
+  "extends": [
     "eslint:recommended",
-    'plugin:vue/recommended',
-    // '@vue/airbnb'
+    "plugin:vue/recommended",
   ],
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
+    "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off"
   },
   parserOptions: {
-    parser: 'babel-eslint',
+    parser: "babel-eslint",
     ecmaVersion: 2018
   },
   rules: {
